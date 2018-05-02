@@ -1,8 +1,8 @@
 {% set name = "netifaces" %}
-{% set version = "0.10.6" %}
+{% set version = "0.10.7" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "0c4da523f36d36f1ef92ee183f2512f3ceb9a9d2a45f7d19cda5a42c6689ebe0" %}
+{% set hash_val = "bd590fcb75421537d4149825e1e63cca225fd47dad861710c46bd1cb329d8cbd" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
