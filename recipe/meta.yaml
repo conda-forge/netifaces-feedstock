@@ -1,9 +1,8 @@
 {% set name = "netifaces" %}
-{% set version = "0.10.6" %}
+{% set version = "0.10.7" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "0c4da523f36d36f1ef92ee183f2512f3ceb9a9d2a45f7d19cda5a42c6689ebe0" %}
-{% set build = 0 %}
+{% set hash_val = "bd590fcb75421537d4149825e1e63cca225fd47dad861710c46bd1cb329d8cbd" %}
 
 package:
   name: {{ name }}
@@ -11,18 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - toolchain
 
   run:
@@ -33,11 +32,11 @@ test:
     - netifaces
 
 about:
-  home: https://bitbucket.org/al45tair/netifaces
+  home: https://github.com/al45tair/netifaces
   license: MIT
   license_family: MIT
   summary: 'Portable network interface information.'
-  dev_url: https://bitbucket.org/al45tair/netifaces
+  dev_url: https://github.com/al45tair/netifaces
 
 extra:
   recipe-maintainers:
