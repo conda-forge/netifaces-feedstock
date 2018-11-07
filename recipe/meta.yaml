@@ -14,15 +14,16 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
 
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - pip
-    - toolchain
 
   run:
     - python
@@ -41,4 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - anguslees
+    - minrk
     - pmlandwehr
