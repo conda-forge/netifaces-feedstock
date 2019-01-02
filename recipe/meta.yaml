@@ -1,8 +1,8 @@
 {% set name = "netifaces" %}
-{% set version = "0.10.7" %}
+{% set version = "0.10.9" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "bd590fcb75421537d4149825e1e63cca225fd47dad861710c46bd1cb329d8cbd" %}
+{% set hash_val = "2dee9ffdd16292878336a58d04a20f0ffe95555465fee7c9bd23b3490ef2abf3" %}
 
 package:
   name: {{ name }}
