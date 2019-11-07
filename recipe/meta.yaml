@@ -36,6 +36,7 @@ about:
   home: https://github.com/al45tair/netifaces
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: 'Portable network interface information.'
   dev_url: https://github.com/al45tair/netifaces
 
