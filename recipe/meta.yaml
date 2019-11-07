@@ -1,8 +1,8 @@
 {% set name = "netifaces" %}
-{% set version = "0.10.8" %}
+{% set version = "0.10.9" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "befc9800751991c005fcc24e75be90c5752e5c1907ed4fa4efa17adfcc09d490" %}
+{% set hash_val = "2dee9ffdd16292878336a58d04a20f0ffe95555465fee7c9bd23b3490ef2abf3" %}
 
 package:
   name: {{ name }}
@@ -36,6 +36,7 @@ about:
   home: https://github.com/al45tair/netifaces
   license: MIT
   license_family: MIT
+  license_file: LICENSE
   summary: 'Portable network interface information.'
   dev_url: https://github.com/al45tair/netifaces
 
