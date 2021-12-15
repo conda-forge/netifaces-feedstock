@@ -13,8 +13,8 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1004
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1005
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 
 requirements:
@@ -32,6 +32,10 @@ requirements:
 test:
   imports:
     - netifaces
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/al45tair/netifaces
@@ -45,4 +49,3 @@ extra:
   recipe-maintainers:
     - anguslees
     - minrk
-    - pmlandwehr
