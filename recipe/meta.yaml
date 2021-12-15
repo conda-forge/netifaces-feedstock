@@ -1,7 +1,7 @@
 {% set name = "netifaces" %}
-{% set version = "0.10.9" %}
+{% set version = "0.11.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_val = "2dee9ffdd16292878336a58d04a20f0ffe95555465fee7c9bd23b3490ef2abf3" %}
+{% set hash_val = "043a79146eb2907edf439899f262b3dfe41717d34124298ed281139a8b93ca32" %}
 
 package:
   name: {{ name }}
@@ -13,8 +13,8 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1005
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
@@ -42,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Portable network interface information.'
+  summary: Portable network interface information.
   dev_url: https://github.com/al45tair/netifaces
 
 extra:
