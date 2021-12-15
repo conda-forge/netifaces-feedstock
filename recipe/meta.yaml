@@ -13,8 +13,8 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1004
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1005
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 
 requirements:
